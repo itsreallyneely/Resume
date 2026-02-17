@@ -5,11 +5,11 @@
 
 /* --- CSS Custom Properties --- */
 :root {
-    --color-primary: #2c3e50;
-    --color-accent: #34698a;
-    --color-text: #333333;
+    --color-primary: #1a3a3a;
+    --color-accent: #2a7f7f;
+    --color-text: #2d2d2d;
     --color-text-light: #555555;
-    --color-border: #d0d0d0;
+    --color-border: #c4d4d4;
     --color-bg: #ffffff;
     --color-section-bg: #f8f9fa;
     --font-main: 'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif;
@@ -63,8 +63,9 @@ body {
     font-weight: 700;
     color: var(--color-primary);
     letter-spacing: 0.04em;
-    margin-bottom: 0.06in;
+    margin-bottom: 0.18in;
     text-transform: uppercase;
+    line-height: var(--font-size-name);
 }
 
 .contact-info {
@@ -95,7 +96,7 @@ body {
 
 /* --- Sections --- */
 .resume-section {
-    margin-bottom: 0.16in;
+    margin-bottom: 0.18in;
 }
 
 .resume-section:last-child {
@@ -350,7 +351,7 @@ body {
 
     .resume {
         margin: 0;
-        padding: 0.4in;
+        padding: 0;
         box-shadow: none;
         max-width: none;
     }
@@ -376,7 +377,7 @@ body {
     }
 
     @page {
-        margin: 0.25in;
+        margin: 0.4in 0.8in;
         size: letter;
     }
 }
