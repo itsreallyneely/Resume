@@ -37,7 +37,7 @@ html {
 body {
     font-family: var(--font-main);
     color: var(--color-text);
-    background: #e8e8e8;
+    background: linear-gradient(0deg,rgba(212, 212, 212, 1) 0%, rgba(232, 232, 232, 1) 100%);
     line-height: 1.45;
 }
 
