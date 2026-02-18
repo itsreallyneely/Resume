@@ -37,8 +37,25 @@ html {
 body {
     font-family: var(--font-main);
     color: var(--color-text);
-    background: #e8e8e8;
+    background: linear-gradient(0deg,rgba(212, 212, 212, 1) 0%, rgba(232, 232, 232, 1) 100%);
     line-height: 1.45;
+    position: relative;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    right: 20px;
+    width: 260px;
+    height: 382px; /* maintains 544:799 aspect ratio */
+    background-image: url('resume-graphic.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    opacity: 0.25;
+    pointer-events: none;
+    z-index: -1;
 }
 
 /* --- Page Container --- */
@@ -354,6 +371,10 @@ body {
         padding: 0;
         box-shadow: none;
         max-width: none;
+    }
+
+    body::after {
+        display: none;
     }
 
     .resume-header {
