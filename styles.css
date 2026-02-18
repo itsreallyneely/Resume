@@ -45,7 +45,7 @@ body {
 body::after {
     content: '';
     position: absolute;
-    bottom: -40px;
+    bottom: 0px;
     right: 20px;
     width: 260px;
     height: 382px; /* maintains 544:799 aspect ratio */
