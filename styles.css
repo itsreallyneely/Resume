@@ -45,15 +45,15 @@ body {
 body::after {
     content: '';
     position: absolute;
-    bottom: 0px;
-    right: 20px;
-    width: 260px;
-    height: 382px; /* maintains 544:799 aspect ratio */
+    bottom: 0;
+    right: 4vw;
+    width: max(150px, calc((100vw - var(--page-max-width)) / 3.5));
+    aspect-ratio: 476 / 658;
     background-image: url('resume-graphic.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom right;
-    opacity: 0.25;
+    opacity: 0.4;
     pointer-events: none;
     z-index: -1;
 }
@@ -327,6 +327,15 @@ body::after {
     font-size: var(--font-size-base);
     margin-top: 0.02in;
     line-height: 1.4;
+}
+
+.project-entry a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+.project-entry a:hover {
+    text-decoration: underline;
 }
 
 /* --- Responsive --- */
