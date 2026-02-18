@@ -386,15 +386,16 @@ body::after {
         text-decoration: none;
     }
 
-    /* Avoid page breaks inside entries */
+    /* Keep individual entries together, but allow sections to break across pages */
     .experience-entry,
     .education-entry,
     .project-entry {
         break-inside: avoid;
     }
 
-    .resume-section {
-        break-inside: avoid;
+    /* Prevent a section title from being orphaned at the bottom of a page */
+    .section-title {
+        break-after: avoid;
     }
 
     @page {
