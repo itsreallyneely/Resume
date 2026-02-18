@@ -391,8 +391,21 @@ body::after {
     }
 
     .contact-info a {
-        color: var(--color-text);
+        color: var(--color-primary);
         text-decoration: none;
+    }
+
+    .project-name a {
+        color: var(--color-primary);
+        text-decoration: none;
+    }
+
+    .resume-section {
+        margin-bottom: 0.12in;
+    }
+
+    .section-title {
+        padding-bottom: 0;
     }
 
     /* Keep individual entries together, but allow sections to break across pages */
