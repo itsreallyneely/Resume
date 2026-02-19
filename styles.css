@@ -42,20 +42,42 @@ body {
     position: relative;
 }
 
-body::after {
-    content: '';
+.bg-decor {
     position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.bg-airplane {
+    top: 20vh;
+    left: 4vw;
+    width: max(150px, calc((100vw - var(--page-max-width)) / 4));
+    aspect-ratio: 1318.8428 / 322.26273;
+    background-image: url('United_Airlines_Boeing_777-200_Meulemans.svg');
+    background-position: bottom left;
+    opacity: 0.35;
+}
+
+.bg-computerhead {
     bottom: 0;
     right: 4vw;
     width: max(150px, calc((100vw - var(--page-max-width)) / 3.5));
     aspect-ratio: 476 / 658;
-    background-image: url('resume-graphic.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-image: url('colored_computerhead.svg');
     background-position: bottom right;
-    opacity: 0.4;
-    pointer-events: none;
-    z-index: -1;
+    opacity: 0.7;
+}
+
+.bg-forklift {
+    bottom: 30vh;
+    left: 2vw;
+    width: max(150px, calc((100vw - var(--page-max-width)) / 2.5));
+    aspect-ratio: 1193.5071 / 945.84619;
+    background-image: url('painted_forklift.svg');
+    background-position: bottom left;
+    opacity: 0.5;
 }
 
 /* --- Page Container --- */
@@ -382,7 +404,7 @@ body::after {
         max-width: none;
     }
 
-    body::after {
+    .bg-decor {
         display: none;
     }
 
