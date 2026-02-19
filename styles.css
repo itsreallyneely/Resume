@@ -44,7 +44,6 @@ body {
 
 .bg-decor {
     position: absolute;
-    width: max(150px, calc((100vw - var(--page-max-width)) / 3.5));
     background-size: contain;
     background-repeat: no-repeat;
     pointer-events: none;
@@ -54,15 +53,17 @@ body {
 .bg-airplane {
     top: 20vh;
     left: 4vw;
+    width: max(150px, calc((100vw - var(--page-max-width)) / 4));
     aspect-ratio: 1318.8428 / 322.26273;
     background-image: url('United_Airlines_Boeing_777-200_Meulemans.svg');
     background-position: bottom left;
-    opacity: 0.4;
+    opacity: 0.35;
 }
 
 .bg-computerhead {
     bottom: 0;
     right: 4vw;
+    width: max(150px, calc((100vw - var(--page-max-width)) / 3.5));
     aspect-ratio: 476 / 658;
     background-image: url('colored_computerhead.svg');
     background-position: bottom right;
@@ -70,12 +71,13 @@ body {
 }
 
 .bg-forklift {
-    bottom: 0;
-    left: 4vw;
+    bottom: 30vh;
+    left: 2vw;
+    width: max(150px, calc((100vw - var(--page-max-width)) / 2.5));
     aspect-ratio: 1193.5071 / 945.84619;
     background-image: url('painted_forklift.svg');
     background-position: bottom left;
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
 /* --- Page Container --- */
