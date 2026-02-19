@@ -37,7 +37,7 @@ html {
 body {
     font-family: var(--font-main);
     color: var(--color-text);
-    background: linear-gradient(0deg,rgba(212, 212, 212, 1) 0%, rgba(232, 232, 232, 1) 100%);
+    background: linear-gradient(180deg,rgba(225, 227, 230, 1) 0%, rgba(223, 225, 230, 1) 71%);
     line-height: 1.45;
     position: relative;
 }
@@ -71,13 +71,25 @@ body {
 }
 
 .bg-forklift {
-    bottom: 30vh;
+    bottom: 35%;
+    transform: translateY(50%);
     left: 2vw;
     width: max(150px, calc((100vw - var(--page-max-width)) / 2.5));
     aspect-ratio: 1193.5071 / 945.84619;
     background-image: url('painted_forklift.svg');
     background-position: bottom left;
     opacity: 0.5;
+}
+
+.bg-logos {
+    top: 32%;
+    transform: translateY(-50%);
+    right: 4vw;
+    width: max(150px, calc((100vw - var(--page-max-width)) / 3));
+    aspect-ratio: 243.430 / 322.074;
+    background-image: url('logo-cloud.svg');
+    background-position: bottom right;
+    opacity: 0.4;
 }
 
 /* --- Page Container --- */
